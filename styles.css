@@ -1,26 +1,26 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: white;
+    color: black;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
     text-align: center;
 }
 
-header nav a {
-    color: #fff;
+nav a {
+    color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
-header nav a:hover {
-    color: yellow;
+nav a:hover {
+    text-decoration: underline;
 }
 
 main {
@@ -28,23 +28,42 @@ main {
     text-align: center;
 }
 
-main table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    width: 50%;
-}
-
-main table, th, td {
-    border: 1px solid #333;
-    padding: 10px;
-}
-
 footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    background: #333;
-    color: #fff;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Table Styles */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #fff;
+}
+
+table th, table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
