@@ -6,7 +6,6 @@
 <title>Ashmith S Gowda | Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -22,12 +21,11 @@
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#achievements">Achievements</a>
+      <a href="#certificates">Certificates</a>
       <a href="#contact">Contact</a>
     </div>
 
-    <div class="hamburger" id="hamburger">
-      ☰
-    </div>
+    <div class="hamburger" id="hamburger">☰</div>
   </div>
 </nav>
 
@@ -43,9 +41,9 @@
   </h1>
 
   <p>
-    Computer Science Engineering student at CMR Institute of Technology, Bangalore (CGPA 7.03, 2026).
-    Focused on AI-driven systems, cloud-backed applications, and full-stack development.
-    Passionate about building intelligent and scalable solutions.
+    Computer Science Engineering student specializing in AI-driven systems,
+    full-stack development, and cloud-based deployment.
+    Passionate about building intelligent, scalable solutions.
   </p>
 
   <div class="hero-buttons">
@@ -54,32 +52,18 @@
   </div>
 </div>
 
-<div class="hero-card">
-  <div class="network-bg"></div>
-
-  <div class="core-stack">
-    <strong>Core Stack</strong><br>
-    <span class="pill">Python</span>
-    <span class="pill">React.js</span>
-    <span class="pill">Flask</span>
-    <span class="pill">AWS</span>
-    <span class="pill">PyTorch</span>
-    <span class="pill">Docker</span>
-    <span class="pill">MongoDB</span>
-  </div>
+<div class="hero-photo-card">
+  <img src="images/photo.jpg" alt="Ashmith S Gowda" class="profile-img">
 
   <div class="stats">
     <div class="stat-card">
-      <strong>3+</strong><br>
-      Projects
+      <strong>3+</strong><br>Projects
     </div>
     <div class="stat-card">
-      <strong>4+</strong><br>
-      Certifications
+      <strong>3</strong><br>Live Deployments
     </div>
     <div class="stat-card">
-      <strong>0.93</strong><br>
-      Best ROC-AUC
+      <strong>0.93</strong><br>Best ROC-AUC
     </div>
   </div>
 </div>
@@ -90,7 +74,6 @@
 <!-- SKILLS -->
 <section id="skills">
 <div class="container">
-
 <h2>Skills & Technologies</h2>
 
 <div class="skills-grid">
@@ -106,28 +89,23 @@
 <span class="pill">HTML</span>
 <span class="pill">CSS</span>
 <span class="pill">JavaScript</span>
-<span class="pill">Bootstrap</span>
 <span class="pill">React.js</span>
-<span class="pill">TailwindCSS</span>
 </div>
 
 <div class="skill-row">
 <div class="skill-label">Backend</div>
 <span class="pill">Flask</span>
-<span class="pill">MySQL</span>
 <span class="pill">MongoDB</span>
 </div>
 
 <div class="skill-row">
-<div class="skill-label">Cloud</div>
-<span class="pill">AWS EC2</span>
-<span class="pill">AWS ECR</span>
-<span class="pill">AWS S3</span>
+<div class="skill-label">Cloud & DevOps</div>
+<span class="pill">AWS</span>
 <span class="pill">Docker</span>
 </div>
 
 <div class="skill-row">
-<div class="skill-label">ML</div>
+<div class="skill-label">Machine Learning</div>
 <span class="pill">PyTorch</span>
 <span class="pill">DGL</span>
 <span class="pill">GraphSAGE</span>
@@ -142,128 +120,124 @@
 <!-- PROJECTS -->
 <section id="projects">
 <div class="container">
-
 <h2>Projects</h2>
 
 <div class="project-grid">
 
+<!-- Resume Maker -->
 <div class="card">
 <h3>Resume Maker Web Application</h3>
 <p>
-Full-stack resume generation platform with live preview and PDF export.
-Built using HTML, CSS, and JavaScript with structured dynamic form rendering.
+Dynamic resume builder with live preview and PDF export.
 </p>
+
 <div>
 <span class="pill">HTML</span>
 <span class="pill">CSS</span>
 <span class="pill">JavaScript</span>
 </div>
+
+<div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
+<a href="https://ashmithgowda.github.io/Resume-Maker/" target="_blank" class="btn btn-primary">
+Live Demo →
+</a>
+<a href="https://github.com/ashmithgowda/Resume-Maker" target="_blank" class="btn btn-secondary">
+View Code
+</a>
+</div>
 </div>
 
+<!-- Password Manager -->
 <div class="card">
 <h3>Smart Password Manager</h3>
 <p>
-Secure credential management system with smart password generator,
-clipboard functionality, and local storage-based privacy-first architecture.
+Secure credential manager with password generator and local storage architecture.
 </p>
+
 <div>
 <span class="pill">HTML</span>
 <span class="pill">CSS</span>
 <span class="pill">JavaScript</span>
 </div>
+
+<div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
+<a href="https://ashmithgowda.github.io/smartpasswordmanager/" target="_blank" class="btn btn-primary">
+Live Demo →
+</a>
+<a href="https://github.com/ashmithgowda/smartpasswordmanager" target="_blank" class="btn btn-secondary">
+View Code
+</a>
+</div>
 </div>
 
+<!-- Landslide Project -->
 <div class="card">
-<h3>Unified Landslide Risk Assessment System</h3>
+<h3>⭐ Unified Landslide Risk Assessment System</h3>
 <p>
-Graph Neural Network-based landslide risk predictor using GraphSAGE, GCN and GAT.
-Integrated Flask REST API and React dashboard. Achieved ROC-AUC ≈ 0.93.
+Graph Neural Network–based landslide risk prediction system.
+Flask REST API + React dashboard + Docker deployment.
 </p>
+
 <div>
 <span class="pill">Python</span>
 <span class="pill">PyTorch</span>
-<span class="pill">DGL</span>
 <span class="pill">Flask</span>
 <span class="pill">React.js</span>
 <span class="pill">Docker</span>
 </div>
+
+<div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
+<a href="https://major-project01-gfr6.onrender.com" target="_blank" class="btn btn-primary">
+Live Demo →
+</a>
+<a href="https://github.com/ashmithgowda" target="_blank" class="btn btn-secondary">
+View Code
+</a>
+</div>
+
+<p style="font-size:12px; color:gray; margin-top:10px;">
+Note: First load may take 30–40 seconds due to Render cold start.
+</p>
 </div>
 
 </div>
 </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
+<!-- CERTIFICATES -->
+<section id="certificates">
 <div class="container">
+<h2>Certifications</h2>
 
-<h2>Experience</h2>
+<div class="certificate-grid">
 
-<div class="timeline">
-
-<div class="timeline-item">
-<div class="timeline-card">
-<h3>Proctoring Intern — Newton School</h3>
-<p>Nov 2025 – Present</p>
-<p>
-Ensuring examination integrity, assisting candidates,
-and strengthening Excel and analytical problem-solving skills.
-</p>
-</div>
+<div class="certificate-card">
+<img src="images/c-programming-bootcamp.jpeg">
+<p>C Programming Bootcamp – Udemy</p>
 </div>
 
-<div class="timeline-item">
-<div class="timeline-card">
-<h3>AI & Generative AI Intern — Bharat Unnati Fellowship (AICTE Approved)</h3>
-<p>Jan 2026 – Present</p>
-<p>
-Completed GenAI, Agentic AI, and CodeXpert programs.
-Built automation workflows and AI-driven projects.
-</p>
+<div class="certificate-card">
+<img src="images/complete-webdev.jpeg">
+<p>Complete Web Development Course – Udemy</p>
 </div>
+
+<div class="certificate-card">
+<img src="images/mastering-dsa.jpeg">
+<p>Mastering DSA – Udemy</p>
 </div>
 
 </div>
-</div>
-</section>
-
-<!-- ACHIEVEMENTS -->
-<section id="achievements">
-<div class="container">
-
-<h2>Achievements</h2>
-
-<ul>
-<li>Best Mini Project Award – Arduino Automated Light Sensor</li>
-<li>Completed “Run for Lakes” Marathon – CMRIT</li>
-<li>Code Carnage 24-Hour Hackathon Participant</li>
-</ul>
-
 </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
 <div class="container">
-
 <h2>Contact</h2>
-
 <p>Email: asgo22cs@cmrit.ac.in</p>
 <p>Phone: +91 9611596961</p>
-<p>
-LinkedIn:
-<a href="https://linkedin.com/in/ashmith-s-gowda-a16a98309" target="_blank">
-linkedin.com/in/ashmith-s-gowda
-</a>
-</p>
-
-<p>
-GitHub:
-<a href="https://github.com/ashmithgowda" target="_blank">
-github.com/ashmithgowda
-</a>
-</p>
-
+<p><a href="https://linkedin.com/in/ashmith-s-gowda-a16a98309" target="_blank">LinkedIn</a></p>
+<p><a href="https://github.com/ashmithgowda" target="_blank">GitHub</a></p>
 </div>
 </section>
 
